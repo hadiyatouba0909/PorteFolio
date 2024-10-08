@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Hadiyatou BA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Animation fade-in lors du scroll */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-pink-50">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-pink-700">Hadiyatou BA</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="text-pink-600 hover:text-pink-800 transition-colors duration-300">À propos</a></li>
+                <li><a href="#skills" class="text-pink-600 hover:text-pink-800 transition-colors duration-300">Compétences</a></li>
+                <li><a href="#projects" class="text-pink-600 hover:text-pink-800 transition-colors duration-300">Projets</a></li>
+                <li><a href="#education" class="text-pink-600 hover:text-pink-800 transition-colors duration-300">Formation</a></li>
+                <li><a href="#contact" class="text-pink-600 hover:text-pink-800 transition-colors duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+        <!-- Section À propos -->
+        <section id="about" class="mb-12 fade-in">
+            <h2 class="text-4xl font-bold text-pink-700 mb-6 text-center">À propos de moi</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <img src="https://via.placeholder.com/150" alt="Votre photo" class="rounded-full mb-6 md:mb-0 md:mr-6 shadow-lg">
+                <p class="text-pink-600 text-lg leading-relaxed text-center md:text-left max-w-3xl mx-auto">
+                    Développeur Web/Mobile Full-stack Junior passionné, avec une formation solide et une expérience pratique dans le développement d'applications web et mobiles. Compétent dans l'utilisation de technologies modernes et constamment à la recherche de nouvelles opportunités pour innover et créer des solutions impactantes.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section id="skills" class="mb-12 fade-in">
+            <h2 class="text-4xl font-bold text-pink-700 mb-6 text-center">Compétences Techniques</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105">
+                    <h3 class="font-bold text-xl text-pink-700 mb-2">Langages</h3>
+                    <p class="text-gray-700">HTML5, CSS3, JavaScript (ES6+), TypeScript, PHP 8</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105">
+                    <h3 class="font-bold text-xl text-pink-700 mb-2">Front-end</h3>
+                    <p class="text-gray-700">React, Vue.js, Tailwind CSS, Bootstrap</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105">
+                    <h3 class="font-bold text-xl text-pink-700 mb-2">Back-end</h3>
+                    <p class="text-gray-700">Node.js, Express.js, Laravel, API RESTful</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105">
+                    <h3 class="font-bold text-xl text-pink-700 mb-2">Bases de données</h3>
+                    <p class="text-gray-700">MySQL, PostgreSQL, MongoDB, Firebase</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105">
+                    <h3 class="font-bold text-xl text-pink-700 mb-2">DevOps & Outils</h3>
+                    <p class="text-gray-700">Git, GitHub, Docker, Trello</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105">
+                    <h3 class="font-bold text-xl text-pink-700 mb-2">Méthodologies</h3>
+                    <p class="text-gray-700">Agile Scrum</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="projects" class="mb-12 fade-in">
+            <h2 class="text-4xl font-bold text-pink-700 mb-6 text-center">Expérience de Projets</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Projet 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105">
+                    <img src="https://via.placeholder.com/400x200" alt="Projet 1" class="rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold text-pink-700 mb-2">Application Web de Gestion Pédagogique</h3>
+                    <p class="text-gray-600 mb-4">Développeur Full-stack</p>
+                    <p class="mb-2 text-gray-700">Technologies : PHP, Tailwind CSS, MySQL</p>
+                    <p class="text-gray-700">Développement d'une application pour la gestion des cours, des étudiants et des enseignants. Mise en œuvre de l'architecture MVC.</p>
+                    <a href="https://github.com/lien-projet" class="inline-block mt-4 bg-pink-600 text-white px-4 py-2 rounded-full hover:bg-pink-800 transition">Voir le projet</a>
+                </div>
+                <!-- Projet 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105">
+                    <img src="https://via.placeholder.com/400x200" alt="Projet 2" class="rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold text-pink-700 mb-2">Application de Gestion de Boutique</h3>
+                    <p class="text-gray-600 mb-4">Développeur Front-end (en équipe)</p>
+                    <p class="mb-2 text-gray-700">Technologies : PHP (procédural), Tailwind CSS</p>
+                    <p class="text-gray-700">Développement d'une application de gestion de boutique avec un accent sur la gestion des clients, des dettes et des articles.</p>
+                    <a href="https://github.com/lien-projet" class="inline-block mt-4 bg-pink-600 text-white px-4 py-2 rounded-full hover:bg-pink-800 transition">Voir le projet</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Formation -->
+        <section id="education" class="mb-12 fade-in">
+            <h2 class="text-4xl font-bold text-pink-700 mb-6 text-center">Formation</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105">
+                    <h3 class="font-bold text-xl text-pink-700">Sonatel Academy</h3>
+                    <p class="text-gray-600">Formation en développement d'applications web et mobile</p>
+                    <p class="text-sm text-gray-500">Février 2024 - Présent</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg transform transition hover:scale-105">
+                    <h3 class="font-bold text-xl text-pink-700">Groupe ISI Suptech</h3>
+                    <p class="text-gray-600">Licence en Informatique</p>
+                    <p class="text-sm text-gray-500">Décembre 2022 - Février 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="mb-12 fade-in">
+            <h2 class="text-4xl font-bold text-pink-700 mb-6 text-center">Contact</h2>
+            <p class="text-center text-pink-600 mb-6">N'hésitez pas à me contacter pour toute opportunité ou collaboration :</p>
+            <div class="text-center">
+                <a href="mailto:hadiryatouba09@gmail.com" class="block text-pink-600 text-lg hover:underline">hadiryatouba09@gmail.com</a>
+                <p class="text-gray-700 text-lg">Téléphone : +221 78 016 04 74</p>
+                <p class="text-gray-700 text-lg">Localisation : Dakar, Sénégal</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-pink-700 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Hadiyatou BA. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Fonction pour l'animation au scroll
+        document.addEventListener('scroll', function() {
+            document.querySelectorAll('.fade-in').forEach(function(el) {
+                if (el.getBoundingClientRect().top < window.innerHeight) {
+                    el.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
